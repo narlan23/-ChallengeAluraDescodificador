@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+header{
+    margin-right: 32px;
+    margin:16px;
+}
 
 body{
     background-color: #F3F5FC;
@@ -20,10 +24,11 @@ button{
 }
 
 textarea{
+    border: none;
     font-size: 2rem;
     width: 90%;
     height: 80%;
-    border: none
+
 }
 
 .container {
@@ -40,17 +45,17 @@ textarea{
     flex-direction: column;
     border: 2px solid #fd0303;
     margin: 4rem;
-    height: 70%;
+    height: 90%;
     width: 40%;
 }
 
 .input__container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    height: 80%;
-    width: 80%;
-    margin: 4rem;
+    height: 60%;
+    width: 90%;
+    margin: 2rem;
     border: 2px solid #05ee95;
 }
 
@@ -61,39 +66,63 @@ textarea{
     align-items: end;
     gap: 32px;
     margin: 1rem;
-    height: 20%;
+    height: 15%;
     border: 2px solid #ecd505;
 }
 
 .button__copiar{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
     height: 20%;
-    margin: 2rem;
+    margin: 1rem;
     border: 2px solid #ecd505;
 }
 
 .mensagem__cantainer{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     text-align: center;
     background-color: white;
     border-radius: 32px;
     height: 95%;
     width: 25%;
     margin: 4rem;
-
     border: 2px solid #4503f8;
 }
 
-.mensagem__cantainer p {
-    white-space: normal; /* Permite que o texto quebre automaticamente */
+p{
+
 }
 
+.alert__container{
+    margin-left: 8%;
+    border: 2px solid #4503f8;
+}
+.alert__txt{
+    font-size: 12;
+    margin-left: 4%;
+}
 
+.msg__txt{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #4503f8;
+    margin: 6rem;
+    margin-top: 40%;
+    height: 40%;
+    overflow-wrap: break-word;
+    white-space: normal; /* Garante que o texto possa quebrar em várias linhas */
+    max-width: 100%;
+    font-size: 24px;
+}
 
+#copiar{
+    display: none;
+}
+
+#lupa{
+    height: auto;
+    width: auto;
+}
 

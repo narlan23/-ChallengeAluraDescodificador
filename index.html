@@ -7,25 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header></header>
+    <header>
+       <img src="assets/icon.png" alt="icone">
+    </header>
     <main> 
         <div class="container">
             <div class="main__container">
                 <div class="input__container">
                     <textarea placeholder="Digite seu texto"></textarea>
-                </div>      
+                </div> 
+                <div class="alert__container">
+                    <p class="alert__txt">
+                        <img src="assets/exclamation.png" alt=" ">
+                        Apenas letras minúsculas e sem acento.
+                    </p>  
+                </div>
                 <div class="buttons__container">
                     <button onclick="criptografarTexto()">Criptografar</button>
                     <button onclick="descriptografarTexto()">Descriptografar</button>
                 </div>
             </div>   
             <div class="mensagem__cantainer" id="mensagem">
-                <p>
+                
+                <p class="msg__txt">
+                    <img id="lupa" src="assets/img.PNG" alt="foto lupa">
                     <strong>Nenhuma mensagem encontrada.</strong>
                     <br>Digite um texto que você deseja criptografar ou descriptografar.
                 </p>
                 <div class="button__copiar">
-                    <button onclick="copiarTexto()">Copiar</button>
+                    <button onclick="copiarTexto()" id="copiar">Copiar</button>
                 </div>
                 
             </div>

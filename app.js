@@ -1,12 +1,14 @@
 function criptografarTexto() {
     let texto = document.querySelector('textarea').value;
     let textoCriptografado = criptografar(texto);
+    mostrarBotao();
     exibirTextoNaTela('#mensagem p', textoCriptografado);
 }
 
 function descriptografarTexto() {
     let texto = document.querySelector('textarea').value;
     let textoDescriptografado = descriptografar(texto); 
+    mostrarBotao();
     exibirTextoNaTela('#mensagem p', textoDescriptografado);
 }
 
@@ -44,4 +46,8 @@ function descriptografar(texto) {
         .replace(/ober/g, 'o')
         .replace(/ufat/g, 'u');
     return textoDescriptografado;
+}
+
+function mostrarBotao() {
+    document.getElementById('copiar').style.display = 'inline-block';
 }
