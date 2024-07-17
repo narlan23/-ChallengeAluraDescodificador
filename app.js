@@ -1,11 +1,11 @@
 function criptografarTexto() {
-    let texto = document.querySelector('input').value;
+    let texto = document.querySelector('textarea').value;
     let textoCriptografado = criptografar(texto);
     exibirTextoNaTela('#mensagem p', textoCriptografado);
 }
 
 function descriptografarTexto() {
-    let texto = document.querySelector('input').value;
+    let texto = document.querySelector('textarea').value;
     let textoDescriptografado = descriptografar(texto); 
     exibirTextoNaTela('#mensagem p', textoDescriptografado);
 }
