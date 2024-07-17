@@ -16,34 +16,43 @@ button{
     padding: 24px;
     width: 328px;
     height: 67px;
-    background-color: #0A3871;
-    color: white;
+    background-color: #D8DFE8;
+    color: #0A3871;
     font-size: 16px;
     border-radius: 24px;
-    border: none; /* Removida a borda padrão */
+}
+#btCripto{
+    background-color: #0A3871;
+    color: white;
+    border: none;
 }
 
+::placeholder {
+    color: #0A3871; /* Define a cor do placeholder */
+}
 textarea{
     border: none;
+    resize: none;
+    outline: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
     font-size: 2rem;
     width: 90%;
     height: 80%;
-
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #a80f0f;
-    height: 100vh;
+    height: 90vh;
 
 }
 
 .main__container{
     display: flex;
     flex-direction: column;
-    border: 2px solid #fd0303;
+
     margin: 4rem;
     height: 90%;
     width: 40%;
@@ -56,7 +65,7 @@ textarea{
     height: 60%;
     width: 90%;
     margin: 2rem;
-    border: 2px solid #05ee95;
+
 }
 
 .buttons__container{
@@ -67,7 +76,7 @@ textarea{
     gap: 32px;
     margin: 1rem;
     height: 15%;
-    border: 2px solid #ecd505;
+
 }
 
 .button__copiar{
@@ -76,7 +85,7 @@ textarea{
     align-items: center;
     height: 20%;
     margin: 1rem;
-    border: 2px solid #ecd505;
+
 }
 
 .mensagem__cantainer{
@@ -88,7 +97,7 @@ textarea{
     height: 95%;
     width: 25%;
     margin: 4rem;
-    border: 2px solid #4503f8;
+
 }
 
 p{
@@ -97,7 +106,7 @@ p{
 
 .alert__container{
     margin-left: 8%;
-    border: 2px solid #4503f8;
+
 }
 .alert__txt{
     font-size: 12;
@@ -107,7 +116,7 @@ p{
 .msg__txt{
     display: flex;
     flex-direction: column;
-    border: 2px solid #4503f8;
+    color: #495057;
     margin: 6rem;
     margin-top: 40%;
     height: 40%;
