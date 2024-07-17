@@ -8,16 +8,14 @@
 <body>
     <header></header>
     <main>
-        <input type="text" value="Digite seu texto">
-        <button>Criptografar</button>
-        <button>Descriptografar</button>
-        <div>
-            <p>Nenhuma mensagem encontrada
-            Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <input type="text" placeholder="Digite seu texto">
+        <button onclick="criptografarTexto()">Criptografar</button>
+        <button onclick="descriptografarTexto()">Descriptografar</button>
+        <div id="mensagem">
+            <p>Nenhuma mensagem encontrada. Digite um texto que você deseja criptografar ou descriptografar.</p>
         </div>
-        
-    
     </main>
     <footer></footer>
+    <script src="app.js"></script>
 </body>
 </html>
