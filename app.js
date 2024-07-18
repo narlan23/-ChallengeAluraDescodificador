@@ -13,6 +13,7 @@ function descriptografarTexto() {
 }
 
 function exibirTextoNaTela(seletor, texto) {
+    aumentarFonte();
     let campo = document.querySelector(seletor);
     campo.textContent = texto;
 }
@@ -27,8 +28,9 @@ function copiarTexto() {
 }
 
 function criptografar(texto) {
-    
-    let textoCriptografado = texto
+    let convertTexto = texto.toLowerCase();
+    let textoCriptografado = convertTexto
+        .replace(/[^a-z\s]/g, '')
         .replace(/e/g, 'enter')
         .replace(/i/g, 'imes')
         .replace(/a/g, 'ai')
@@ -38,8 +40,9 @@ function criptografar(texto) {
 }
 
 function descriptografar(texto) {
-    
-    let textoDescriptografado = texto
+    let convertTexto = texto.toLowerCase();
+    let textoDescriptografado = convertTexto
+        .replace(/[^a-z\s]/g, '')
         .replace(/enter/g, 'e')
         .replace(/imes/g, 'i')
         .replace(/ai/g, 'a')
@@ -51,3 +54,13 @@ function descriptografar(texto) {
 function mostrarBotao() {
     document.getElementById('copiar').style.display = 'inline-block';
 }
+
+function aumentarFonte() {
+    var mensagemElement = document.getElementById('mensagem');
+    var paragrafoElement = mensagemElement.querySelector('.msg__txt');
+    paragrafoElement.style.fontSize = '24px'; // Altera o tamanho da fonte para 24px
+}
+
+
+
+
