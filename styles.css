@@ -134,3 +134,51 @@ textarea{
 }
 
 
+@media screen and (max-width: 1200px){
+    .container{
+        flex-direction: column;
+        height: 90%;
+    }
+    .main__container{
+        width: 90%;
+        height: 40%;
+    }
+    .mensagem__cantainer{
+        width: 90%;
+        height: 5%;
+    }
+
+    .msg__txt img#lupa {
+        display: none;
+    }
+    .input__container{
+        justify-content:flex-start;
+        align-items: center;
+    }
+
+    .msg__txt{
+        margin: 2%;
+    }
+
+    .alert__txt{
+        margin-left: 0;
+    }
+
+    .buttons__container{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    
+    .buttons__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
